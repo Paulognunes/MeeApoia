@@ -1,0 +1,76 @@
+<mat-card>
+  <mat-card-content>
+    <form [formGroup]="projeto" (ngSubmit)="cadastrar()">
+      <h2>Cadastrar Projeto</h2>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="Nome do Projeto" formControlName="nome" />
+        <mat-error *ngIf="projeto.controls['nome'].hasError('required')">
+          Digite um nome para o projeto
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="Descrição" formControlName="descricao" />
+        <mat-error *ngIf="projeto.controls['descricao'].hasError('required')">
+          Digite uma descrição
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="Categoria" formControlName="categoria" />
+        <mat-error *ngIf="projeto.controls['categoria'].hasError('required')">
+          Digite uma Categoria
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="Cidade" formControlName="cidade" />
+        <mat-error *ngIf="projeto.controls['cidade'].hasError('required')">
+          Digite uma cidade
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="UF" formControlName="uf" />
+        <mat-error *ngIf="projeto.controls['uf'].hasError('required')">
+          > Digite uma uf
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="Valor" formControlName="valor" required />
+        <mat-error *ngIf="projeto.controls['valor'].hasError('required')">
+          Digite um valor
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input
+          matInput
+          placeholder="Quantidade de dias"
+          formControlName="dias"
+        />
+        <mat-error *ngIf="projeto.controls['dias'].hasError('required')">
+          Digite uma quantidade de dias para a arrecadação
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="Agência" formControlName="agencia" />
+        <mat-error *ngIf="projeto.controls['agencia'].hasError('required')">
+          Digite a agência bancária
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width-input" appearance="outline">
+        <input matInput placeholder="Conta" formControlName="conta" required />
+        <mat-error *ngIf="projeto.controls['conta'].hasError('required')">
+          Digite a conta bancária
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary">Entrar</button>
+    </form>
+  </mat-card-content>
+</mat-card>

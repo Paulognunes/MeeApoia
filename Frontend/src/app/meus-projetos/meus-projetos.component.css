@@ -1,0 +1,21 @@
+.custom-mat-icon {
+  font-size: 15px;
+}
+
+.body {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+.title {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 150%;
+  line-height: 1.5;
+  border: #ffffff
+}
+

@@ -1,0 +1,30 @@
+.body {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 140%;
+  line-height: 1.5;
+}
+
+.title {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 180%;
+  line-height: 1.5;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}

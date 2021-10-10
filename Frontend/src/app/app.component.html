@@ -1,0 +1,37 @@
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div>
+      <a class="button" mat-raised-button [routerLink]="'/home'">
+        <mat-icon>home</mat-icon>
+        MeeApoia
+      </a>
+
+      <a class="button" mat-raised-button [routerLink]="'/projetos'">
+        <mat-icon>explore</mat-icon>
+        Projetos
+      </a>
+
+      <a class="button" mat-raised-button [routerLink]="'/cadastro'">
+        <mat-icon>add_box</mat-icon>
+        Cadastrar Projeto
+      </a>
+
+      <a class="button" mat-raised-button [routerLink]="'/meus-projetos'">
+        <mat-icon>turned_in_not</mat-icon>
+        Meus Projetos
+      </a>
+
+      <a class="button" mat-raised-button [routerLink]="'/auth'">
+        <mat-icon>account_box</mat-icon>
+        Login
+      </a>
+
+      <a class="button" mat-raised-button [routerLink]="'/registrar-user'">
+        <mat-icon>person_add</mat-icon>
+        Registrar Usuário
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
